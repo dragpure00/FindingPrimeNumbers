@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+#include <stdlib.h>
+int main(){
+int positive;//variable that stores the input data
+int num;//variable that stores numbesr between 1 and the input number
+int first;//variable that stores prime number
+
+cout<<"Please enter a positive number"<<endl;
+  cin >> positive;
+system("clear");
+  cout<<"1"<<endl;
+      for( num = 2; num <= positive; num++){
+            bool prime = true;
+    for(first = 2; first <=num/2;first++)//calculating prime numbers in the range
+
+  {
+      if(num % first == 0)
+  {  
+
+prime = false;
+break;
+                      }
+                }
+if( prime == true){
+cout<<num<<endl;
+          }
+    }
+cout<<positive<<endl;
+
+  }
